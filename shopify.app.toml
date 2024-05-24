@@ -3,7 +3,7 @@
 client_id = "56006a8bb7ba0890ed5aea5ad740e5ef"
 name = "commercial-supply-app"
 handle = "commercial-supply-app-9"
-application_url = "https://composition-premises-tiger-miss.trycloudflare.com"
+application_url = "https://types-ghost-profile-traditional.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://composition-premises-tiger-miss.trycloudflare.com/auth/callback",
-  "https://composition-premises-tiger-miss.trycloudflare.com/auth/shopify/callback",
-  "https://composition-premises-tiger-miss.trycloudflare.com/api/auth/callback"
+  "https://types-ghost-profile-traditional.trycloudflare.com/auth/callback",
+  "https://types-ghost-profile-traditional.trycloudflare.com/auth/shopify/callback",
+  "https://types-ghost-profile-traditional.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

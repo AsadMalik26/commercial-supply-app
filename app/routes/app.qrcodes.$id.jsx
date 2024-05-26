@@ -89,9 +89,13 @@ export default function QRCodeForm() {
   const navigate = useNavigate();
 
   async function selectProduct() {
+    // console.log(window.shopify, "window here yup")
+    // new thing: this resourcePicker is very usefull. 
+    // it has pre build ui for provided types (collection/product/variant) and actions (select/add)
     const products = await window.shopify.resourcePicker({
       type: "product",
       action: "select", // customized action verb, either 'select' or 'add',
+      // multiple: true,
     });
 
     if (products) {

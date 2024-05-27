@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { json, redirect } from "@remix-run/node";
 import {
   useActionData,
@@ -126,12 +126,18 @@ export default function QRCodeForm() {
     setCleanFormState({ ...formState });
     submit(data, { method: "post" });
   }
+  const goBack = useCallback(()=>{
+    navigate("/app")
+  }, [])
 
   return (
     <Page>
       <ui-title-bar title={qrCode.id ? "Edit QR code" : "Create new QR code"}>
-        <button variant="breadcrumb" onClick={() => navigate("/app")}>
-          QR codes >
+        <button variant="breadcrumb" onClick={()=>navigate("/app")}>
+          {'QR Codes >'}
+        </button>
+        <button variant="primary" onClick={()=>navigate("/app")}>
+          Cancel
         </button>
       </ui-title-bar>
       <Layout>
@@ -259,6 +265,11 @@ export default function QRCodeForm() {
         <Layout.Section>
           <PageActions
             secondaryActions={[
+              {
+                content: "Cancel",
+                outline: true,
+                onAction: goBack()
+              },
               {
                 content: "Delete",
                 loading: isDeleting,

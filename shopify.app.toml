@@ -3,7 +3,7 @@
 client_id = "56006a8bb7ba0890ed5aea5ad740e5ef"
 name = "commercial-supply-app"
 handle = "commercial-supply-app-9"
-application_url = "https://emacs-buses-partners-richard.trycloudflare.com"
+application_url = "https://hardwood-sa-qualities-scenes.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://emacs-buses-partners-richard.trycloudflare.com/auth/callback",
-  "https://emacs-buses-partners-richard.trycloudflare.com/auth/shopify/callback",
-  "https://emacs-buses-partners-richard.trycloudflare.com/api/auth/callback"
+  "https://hardwood-sa-qualities-scenes.trycloudflare.com/auth/callback",
+  "https://hardwood-sa-qualities-scenes.trycloudflare.com/auth/shopify/callback",
+  "https://hardwood-sa-qualities-scenes.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
